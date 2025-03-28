@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Markdown Previewer</title>
+  </head>
+
+  <body>
+    <main>
+      <h1 class="text-center">Markdown Previewer</h1>
+      <div class="container">
+        <div class="panel">
+          <h2 >Markdown Input</h2>
+          <textarea
+            id="markdown-input"
+            placeholder="Type your markdown ."
+          ></textarea>
+        </div>
+        <div class="panel">
+          <h2>Preview</h2>
+          <div id="preview"></div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button id="clear-btn text-center">Clear</button>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/lib/marked.umd.min.js"></script>
+    <script>
+      const textarea = document.getElementById("markdown-input");
+      const preview = document.getElementById("preview");
+      const clearBtn = document.getElementById("clear-btn");
+
+      // Render markdown to HTML on input change
+      function renderMarkdown() {
+        preview.innerHTML = marked.parse(textarea.value);
+      }
+
+      // for changes in textarea update 
+      textarea.addEventListener("input", renderMarkdown);
+
+      //  resets both textarea and preview
+      clearBtn.addEventListener("click", () => {
+        textarea.value = "";
+        preview.innerHTML = "";
+      });
+
+      // Initial render in case there is default text
+      renderMarkdown();
+    </script>
+  </body>
+</html>
