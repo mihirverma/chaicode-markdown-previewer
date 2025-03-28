@@ -1,20 +1,20 @@
-# Book Library
+# Markdown Previewer
 
 ![Chaicode-Book-Library](Chaicode-Book-Library.png)
 
 ## Overview
 
-A simple library-style web page that fetches and displays books from the FreeAPI Books endpoint.
+ a simple readme markdown previewer that allows users to enter markdown text in a textarea and display the formatted preview in real time without any extra API calls to backend.
 
 ## Features
 
-- **Book Fetching** – Retrieve and display a list of books from FreeAPI.
-- **Book Display** – Show book thumbnails, titles, authors, publisher, and published date.
-- **Clickable Books** – Clicking on a book’s card opens its info link in a new tab (if available).
-- **Search Functionality** – Users can filter books dynamically on the frontend by title or author.
-- **Sorting** – Sort books alphabetically by title or by published date.
-- **Toggle View** – Switch between grid and list layouts.
-- **Pagination / Infinite Scrolling** – As users scroll, the next page of data is fetched and displayed.
+A textarea where users can type Markdown syntax (on left-hand side)
+A preview section that displays the formatted output in real time (on right-hand side)
+Support for basic Markdown elements like:
+Headings (# H1, ## H2, etc.)
+Bold & Italics (**bold**, italic)
+Lists (ordered and unordered)
+A clear/reset button to clear the textarea
 
 ## Tech Stack
 
@@ -23,4 +23,4 @@ A simple library-style web page that fetches and displays books from the FreeAPI
 
 ## Deployment Link
 
-- Link : https://chaicode-masterji-book-library.vercel.app/
+- Link : 
