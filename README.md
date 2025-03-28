@@ -1,6 +1,5 @@
 # Markdown Previewer
 
-![Chaicode-Book-Library](Chaicode-Book-Library.png)
 
 ## Overview
 
@@ -8,18 +7,17 @@
 
 ## Features
 
-A textarea where users can type Markdown syntax (on left-hand side)
-A preview section that displays the formatted output in real time (on right-hand side)
-Support for basic Markdown elements like:
-Headings (# H1, ## H2, etc.)
-Bold & Italics (**bold**, italic)
-Lists (ordered and unordered)
-A clear/reset button to clear the textarea
+- A textarea where users can type Markdown syntax (on left-hand side)
+- A preview section that displays the formatted output in real time (on right-hand side)
+- Support for basic Markdown elements like:
+- Headings (# H1, ## H2, etc.)
+- Bold & Italics (**bold**, italic)
+- Lists (ordered and unordered)
+- A clear/reset button to clear the textarea
 
 ## Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript
-- **API**: FreeAPI
 
 ## Deployment Link
 
